@@ -5,17 +5,20 @@ Repository for the Circuit Python module in Engineering 3
 
 ### Description and Code
 
-Thiss assignment is to get the neopixel to blink green and red and have it output to a serial monitor, "Make it Green" "Make it Red" based on the color it is switching to. you use the dot.fill command to change it to a color but instead of using built-in-colors, i=they instead use the number of red, green and blue on a scale from 0 to 255 for all. To space out the switches you use time.sleep and set it to a certain amount of seconds. To create the infinite loop needed on this assignment you have to create a while true and leave it without any parameter that needs to be filled, that makes it an endless loop.
-
-### Evidence
+This assignment is to get the neopixel to blink green and red and have it output to a serial monitor, "Make it Green" "Make it Red" based on the color it is switching to. you use the dot.fill command to change it to a color but instead of using built-in-colors, i=they instead use the number of red, green and blue on a scale from 0 to 255 for all. To space out the switches you use time.sleep and set it to a certain amount of seconds. To create the infinite loop needed on this assignment you have to create a while true and leave it without any parameter that needs to be filled, that makes it an endless loop.
 
 ``` python
+###Owen Lindsay
+###11/13/2020
+###Gets neopixel on board to blink green and red
+
 import board
 import neopixel
 import time
 
 dot = neopixel.Neopixel(board.NEOPIXEL, 1)
 
+###This is the infinite loop because of no parameter after the colon in the line directly below
 
 while True:
   print("Make it green!")
@@ -26,9 +29,13 @@ while True:
   time.sleep(.5)
 ```
 
+### Evidence
+
 ### Images
 
 ### Reflection
+
+
 
 ## CircuitPython Servo
 
